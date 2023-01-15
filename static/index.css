@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Raleway",sans-serif;
+    background-color: #f6f5f5;
+}
+
+header{
+    background-image: url("./bg.png");
+    width: 100%;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 98%;
+}
+
+#nav-bar-ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+li{
+    float: right;
+    padding: 5px 2px 5px 2px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #1b1b1b;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 2%;
+    font-family: Montserrat;
+}
+
+
+nav ul li a{
+    padding: 20px;
+    color: #505050;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header-text-container{
+    position: absolute;
+    display: block;
+    left: 15%;
+    top: 45%;
+}
+
+.About-me{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+#my-name{
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, #095863, #88847d);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+p{
+    font-size: 22px;
+    font-family: Montserrat;
+}
+
+#profile-photo{
+    position: relative;
+    left: 42%;
+    top: 15%;
+    height: 85%;
+}
+
+.contact-container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 78%;
+    top: 35%;
+    height: 38%;
+    width: 15%;
+    background-color: #F6F5F5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.contact{
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    line-height: 300%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#contact-ref{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    background: linear-gradient(to right,#88847d 50%, #122b26, #095863);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.7s ease-out;
+}
+
+#insta{
+    position: relative;
+    height: 15%;
+    top: 41.5%;
+    margin-right: 2%;
+   
+}
+#github{
+    position: absolute;
+    height: 15%;
+    top: 21%;
+    left: 30px;
+    
+}
+#linkedin{
+    position: absolute;
+    height: 15%;
+    top: 62%;
+    left: 30px;
+    margin-right: 5%;
+}
+
+#contact-ref:hover{
+    background-position: -98%
+}
+
+h1{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 36px;
+}
+
+section{
+    background-color: #F6F5F5;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+}
+
+.project-cards{
+    padding-top: 2%;
+    display: flex;
+    gap: 50px;
+}
+
+.card{
+    width: 22%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    padding-bottom: 1px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.content-container {
+    padding: 2px 16px;
+}
+
+#medecsi{
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    width: 80%;
+    height: 50%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+}
+
+#fitnesspro{
+    margin-left: 10%;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    height: 50%;
+    width: 80%;
+    padding-bottom: 5%;
+}
+
+#notify{
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    height: 50%;
+    margin-left: 10%;
+    width: 80%;
+    padding-bottom: 5%;
+}
+#gamex{
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    height: 50%;
+    width: 80%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+}
+
+#project-name{
+    font-weight: bold;
+    font-size: 22px;
+    background: linear-gradient(to right, #28a58a, #114474);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+
+#project-desc{
+    font-size: 16px;
+    
+}
+
+.section-break
+{
+    display: block;
+    background-image: linear-gradient(to right, #095863, #88847d);
+    margin-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    color: #F6F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #88847d;
+}
+
+.footer-container{
+    padding-bottom: 20px;
+    border-top: 1px solid #999;
+}
+
+.footer-text{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+}
+
+
+@media screen and (max-width: 767px){
+    #profile-photo{
+        visibility: hidden;
+    }
+    .project-cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .content-container{
+        padding-bottom: 15px;
+    }
+    .course-cards{
+        flex-wrap: wrap;
+    }
+    .course-card{
+        margin-bottom: 10%;
+    }
+
+    #p-major{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    #p-minor{
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    
+    .project-cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 46%;
+    }
+    #profile-photo{
+        left: 48%
+    }
+    #p-major{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    #p-minor{
+        font-size: 12px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 1079px) and (min-width: 992px){
+    .card{
+        height:500px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        width: 95%;
+    }
+    #p-major{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    #p-minor{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .contact-container{
+        display: none;
+    }   
+}
+
+@media screen and (min-width: 1080px){
+    #p-major{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    #p-minor{
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+
+.course-cards{
+    display: flex;
+    gap: 20%;
+    padding: 3% 15% 3% 15%;
+}
+
+.course-card {
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.inner-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: center;
+    cursor: pointer;
+}
+
+.course-card:hover .inner-card {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.card-front {
+    background-image: url(./online-education.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-back {
+    background-color: #75b888;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+
+.card-front-minor, .card-back-minor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front-minor {
+    background-image: url(./online-learning.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-back-minor {
+    background-color: #FF725E;
+    color: white;
+    border-radius: 5px;
+    transform: rotateY(180deg);
+}
+
+h2{
+    padding-top: 30px;   
+    padding-bottom: 20px;
+}
+
+#p-major{
+    padding-left: 20px;
+    text-align: left;
+}
+#p-minor{
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+/*for skills*/
+.skillinfo{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-weight: 800;
+}
+.bar{
+    position: relative;
+    border: 2px solid #0d96e0;
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+
+.skill{
+    margin-top: 30px;
+}
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 60%;
+    }
+}
+
+
+/*workexp*/
+.workContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-left: 4%;
+}
+
+.workcard{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 5px;
+    width: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 40%;
+    cursor: pointer;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.workHeading{
+    font-family: Montserrat;
+    font-weight: 800;
+}
+
+.workContent{
+    font-family: Montserrat;
+    line-height: 20px;
+}
+
+.linebreak{
+    width: 90%;
+    margin-bottom: 3%;
+}

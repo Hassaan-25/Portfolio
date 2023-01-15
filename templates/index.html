@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/static/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great Vibes"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="aboutme">
+      <nav class="navbar">
+        <ul id="nav-bar-ul">
+          <li><a href="{{url_for('signup')}}">Contact Me</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#workexp">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-text-container">
+        <div class="About-me">
+          <p>
+            Hello,<br />
+            <span id="my-name">I'm Hassaan Bin Sajid<br /></span>
+            I am a Web Developer
+          </p>
+        </div>
+      </div>
+      <img
+        id="profile-photo"
+        src="{{url_for('static',filename='me.png')}}"
+        alt="My Photo"
+      />
+      <div class="contact-container">
+        <img id="insta" src="{{url_for('static',filename='instagram.png')}}" />
+        <img id="github" src="{{url_for('static',filename='github.png')}}" />
+        <img
+          id="linkedin"
+          src="{{url_for('static',filename='linkedin.png')}}"
+        />
+        <div class="contact">
+          <a
+            id="contact-ref"
+            href="https://github.com/Hassaan-25"
+            target="_blank"
+            >Github</a
+          >
+          <a id="contact-ref" href="" target="_blank">Instagram</a>
+          <a
+            id="contact-ref"
+            href="https://www.linkedin.com/in/hassaanbinsajid/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div id="projects"></div>
+    <section>
+      <div class="section-break">
+        <h1>Projects</h1>
+      </div>
+      <div class="project-cards">
+        <div class="card">
+          <img
+            id="medecsi"
+            src="{{url_for('static',filename='3.png')}}"
+            alt="MEDECSI Logo"
+          />
+          <div class="content-container">
+            <h3><span id="project-name">Medecsi</span></h3>
+            <p>
+              <span id="project-desc"
+                >Medecsi is a platform designed for modern day clinics,
+                digitalizing the clinical process in an adaptive manner.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="notify"
+            src="{{url_for('static',filename='6.png')}}"
+            alt="Notify Logo"
+          />
+          <div class="content-container">
+            <h3><span id="project-name">Notify</span></h3>
+            <p>
+              <span id="project-desc"
+                >Notify is a note-taking application to help keep you up to date
+                with you daily tasks and activities.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="fitnesspro"
+            src="{{url_for('static',filename='1.png')}}"
+            alt="FitnessPro Logo"
+          />
+          <div class="content-container">
+            <h3><span id="project-name">FitnessPro</span></h3>
+            <p>
+              <span id="project-desc"
+                >Fitness Pro is a platform for all the atheletes and gym freaks
+                who want to track their health & fitness goals.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="gamex"
+            src="{{url_for('static',filename='5.png')}}"
+            alt="GameX Logo"
+          />
+          <div class="content-container">
+            <h3><span id="project-name">GameX</span></h3>
+            <p>
+              <span id="project-desc"
+                >GameX is a game rental service platform. Where you can rent
+                your favourite games in a matter of few clicks.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="workexp"></div>
+    <section>
+      <div class="section-break">
+        <h1>Work Experience</h1>
+      </div>
+      <div class="workContainer">
+        <div class="workcard">
+          <span class="workHeading">Experience 1</span>
+          <div class="linebreak"></div>
+          <div class="workcontent">Enter here</div>
+        </div>
+        <div class="workcard">
+          <span class="workHeading">Experience 1</span>
+          <div class="linebreak"></div>
+          <div class="workcontent">Enter here</div>
+        </div>
+        <div class="workcard">
+          <span class="workHeading">Experience 1</span>
+          <div class="linebreak"></div>
+          <div class="workcontent">Enter here</div>
+        </div>
+        <div class="workcard">
+          <span class="workHeading">Experience 1</span>
+          <div class="linebreak"></div>
+          <div class="workcontent">Enter here</div>
+        </div>
+      </div>
+    </section>
+    <div id="skills"></div>
+    <section>
+      <div class="section-break">
+        <h1>Skills</h1>
+      </div>
+      <div class="skill">
+        <div class="skillinfo">
+          <span>HTML</span>
+          <span>90%</span>
+        </div>
+        <div class="bar">
+          <div id="html-bar"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skillinfo">
+          <span>CSS</span>
+          <span>75%</span>
+        </div>
+        <div class="bar">
+          <div id="css-bar"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skillinfo">
+          <span>Javascript</span>
+          <span>60%</span>
+        </div>
+        <div class="bar">
+          <div id="java-bar"></div>
+        </div>
+      </div>
+    </section>
+    <div id="courses"></div>
+    <section>
+      <div class="section-break">
+        <h1>Courses</h1>
+      </div>
+
+      <div class="course-cards">
+        <div class="course-card">
+          <div class="inner-card">
+            <div class="card-front"></div>
+            <div class="card-back">
+              <h2>Major Courses</h2>
+              <p id="p-major">
+                • Programming Fundamentals<br />
+                • Object Orientated Programming<br />
+                • Data Structures<br />
+                • Database Systems<br />
+                • Software Design<br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="inner-card">
+            <div class="card-front-minor"></div>
+            <div class="card-back-minor">
+              <h2>Other Courses</h2>
+              <p id="p-minor">
+                • Marketing Management<br />
+                • Malware Analysis<br />
+                • Psychology<br />
+                • Entrepreneurship<br />
+                • Fundamentals of Management<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <p class="footer-text">© 2022 HassaanBinSajid, All rights reserved.</p>
+    </footer>
+  </body>
+</html>

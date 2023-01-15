@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="/static/contact.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="message-container">
+    <form method="POST" action="{{ url_for('contact')}}">
+      {{ form.hidden_tag() }}
+      <label for="message">Enter your message:</label>
+      {{ form.message(class="form-control", maxlength="300") }}
+      <div class="character-count">0/300</div>
+      {{ form.submit(class="btn btn-primary", type="submit") }}
+    </form>
+    <a href="{{ url_for('home') }}">Return to Home Page</a>
+  </div>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul class="flashes">
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
+  
+</body>
+
+</html>
